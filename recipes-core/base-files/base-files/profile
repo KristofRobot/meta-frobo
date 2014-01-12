@@ -34,5 +34,5 @@ export ROS_ROOT=/usr
 export ROS_MASTER_URI=http://localhost:11311
 export CMAKE_PREFIX_PATH=/usr
 export ROS_PACKAGE_PATH=~/ros_workspace:$ROS_PACKAGE_PATH
-export ROS_HOSTNAME=cubieboard2.local
+export ROS_HOSTNAME=frobo.local
 export PYTHONPATH=$PYTHONPATH:/usr/lib/python2.7/site-packages/ros_arduino_python
