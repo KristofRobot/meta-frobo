@@ -1,0 +1,11 @@
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+
+network={
+    ssid="***REMOVED***"
+    proto=WPA2
+    key_mgmt=WPA-PSK
+    pairwise=CCMP TKIP
+    group=CCMP TKIP
+    psk="fillin"
+}

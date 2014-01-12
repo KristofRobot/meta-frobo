@@ -1,0 +1,36 @@
+This README file contains information on the contents of the
+frobo layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+  URI: git://git.openembedded.org/meta-openembedded
+  layers: meta-oe meta-networking
+  branch: master
+
+
+  URI: git://github.com/bmwcarit/meta-ros
+  branch: master
+
+  URI: git://github.com/linux-sunxi/meta-sunxi
+  branch: master
+
+Patches
+=======
+
+Please submit any patches against the frobo layer to the
+the maintainer:
+
+Maintainer: Kristof Robot <krirobo@gmail.com>
