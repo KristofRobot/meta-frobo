@@ -9,4 +9,4 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_INSTALL_append = " roslaunch cv-bridge python-opencv rosbag python-numpy rospy perf linpackc sensor-msgs geometry-msgs rostest rosunit libcanberra rostopic"
+IMAGE_INSTALL_append = " perf linpackc face-benchmark"
