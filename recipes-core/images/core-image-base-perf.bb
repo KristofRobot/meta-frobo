@@ -9,4 +9,4 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_INSTALL_append = " perf linpackc face-benchmark"
+IMAGE_INSTALL_append = " perf linpackc face-benchmark htop"
