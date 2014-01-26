@@ -1,0 +1,3 @@
+SANITY_VERSION 1
+TMPDIR /home/kristof/OE/build/tmp-eglibc
+SSTATE_DIR /home/kristof/OE/build/sstate-cache
