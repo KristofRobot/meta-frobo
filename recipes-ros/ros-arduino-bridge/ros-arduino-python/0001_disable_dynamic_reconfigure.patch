@@ -1,0 +1,13 @@
+diff -Naur ros_arduino_python/CMakeLists.txt ros_arduino_python2/CMakeLists.txt
+--- ros_arduino_python/CMakeLists.txt	2014-02-23 18:58:10.639776757 +0100
++++ ros_arduino_python2/CMakeLists.txt	2014-02-23 20:31:29.746826546 +0100
+@@ -3,7 +3,7 @@
+ 
+ find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure)
+ catkin_python_setup()
+-generate_dynamic_reconfigure_options(cfg/PID.cfg)
++#generate_dynamic_reconfigure_options(cfg/PID.cfg)
+ catkin_package(CATKIN_DEPENDS dynamic_reconfigure)
+ 
+ install(DIRECTORY config
+
