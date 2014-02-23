@@ -599,7 +599,7 @@ tvin_used = 0
 tvin_channel_num = 4
 
 [pwm0_para]
-pwm_used = 1
+pwm_used = 0
 pwm_period = 20
 pwm_duty_percent = 50
 
