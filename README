@@ -3,6 +3,11 @@ frobo layer.
 
 Please see the corresponding sections below for details.
 
+Build
+=====
+To build an image that can be directly used on frobo:
+
+	bitbake core-image-frobo
 
 Dependencies
 ============
