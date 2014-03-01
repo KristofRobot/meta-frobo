@@ -7,7 +7,9 @@ Build
 =====
 To build an image that can be directly used on frobo:
 
-	bitbake core-image-frobo
+  bitbake core-image-frobo
+  sudo dd if=core-image-frobo of=/dev/mmcblk0 bs=4096
+  using gparted, resize base partition to max size
 
 Dependencies
 ============
