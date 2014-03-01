@@ -7,6 +7,15 @@ DEPENDS = "dynamic-reconfigure"
 
 require ros-arduino-bridge.inc
 
-SRC_URI += "file://0001_disable_dynamic_reconfigure.patch"
+SRC_URI += "file://0001_disable_dynamic_reconfigure.patch \
+	file://frobo_arduino_params.yaml \
+	file://arduino.launch \
+	"
+
+#install custom frobo files
+do_configure_prepend(){
+	install -m 0644 ${WORKDIR}/frobo_arduino_params.yaml ${S}/config/
+	install -m 0644 ${WORKDIR}/arduino.launch ${S}/launch/
+}
 
 RRECOMMENDS_${PN} = "std-msgs rospy sensor-msgs geometry-msgs nav-msgs tf ros-arduino-msgs python-pyserial dynamic-reconfigure"
