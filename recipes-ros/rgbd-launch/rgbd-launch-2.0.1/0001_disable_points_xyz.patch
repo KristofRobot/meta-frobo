@@ -1,0 +1,11 @@
+--- a/launch/includes/depth.launch.xml	2014-03-01 09:12:31.830479357 +0100
++++ b/launch/includes/depth.launch.xml	2014-03-01 09:12:05.558479704 +0100
+@@ -2,7 +2,7 @@
+ <launch>
+ 
+   <arg name="manager" />
+-  <arg name="points_xyz" default="true" />
++  <arg name="points_xyz" default="false" />
+   <arg name="rectify" default="true" />
+   <arg name="respawn" default="false" />
+   <arg     if="$(arg respawn)" name="bond" value="" />
