@@ -1,11 +1,15 @@
-DESCRIPTION = "A small image that fully supports the target device \
-hardware, runs an openssh server, provides linpackc benchmark tool"
+DESCRIPTION = "A base image that fully supports the target device \
+hardware and provides all distro packages"
 
-IMAGE_INSTALL = "packagegroup-core-boot ${ROOTFS_PKGMANAGE_BOOTSTRAP} ${CORE_IMAGE_EXTRA_INSTALL}"
-IMAGE_FEATURES += "ssh-server-openssh package-management"
+#By not defining IMAGE_INSTALL, 
+#falling back to defaults in core-image.bbclass, i.e.:
+#IMAGE_INSTALL = '\
+#    packagegroup-core-boot \
+#    packagegroup-base-extended \
+#    \
+#    ${CORE_IMAGE_EXTRA_INSTALL} \
+#    '
 
 LICENSE = "MIT"
 
 inherit core-image
-
-IMAGE_INSTALL_append = " packagegroup-frobo"
