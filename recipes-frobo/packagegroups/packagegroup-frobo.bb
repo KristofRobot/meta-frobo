@@ -6,6 +6,7 @@ inherit packagegroup
 PACKAGES = "${PN}"
 
 RDEPENDS_${PN} = "\
+	roslaunch \
 	frobo-bringup \
 	frobo-nav \
 	razor-imu-9dof \
