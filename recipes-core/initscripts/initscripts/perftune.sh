@@ -7,7 +7,7 @@
 # Default-Stop:
 # Short-Description: Tune performance 
 ### END INIT INFO
-echo -n "Setting ondemand CPU frequency profile"
+echo "Setting ondemand CPU frequency profile"
 echo ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 echo 336000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 echo 912000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
