@@ -35,7 +35,6 @@ RDEPENDS_${PN} = " \
 	ros-arduino-bridge \
 	ros-arduino-python \
 	xv-11-laser-driver \
-	ntpdate \
 	"
 
 RRECOMMENDS_${PN} = " \
