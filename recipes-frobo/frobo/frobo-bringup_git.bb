@@ -22,4 +22,23 @@ do_install_append(){
 
 FILES_${PN} += "/scripts/*"
 
-RRECOMMENDS_${PN} = "frobo-description freenect-launch depthimage-to-laserscan"
+RDEPENDS_${PN} = " \
+	roslaunch \
+	frobo-description \
+	frobo-nav \
+	freenect-launch \
+	depthimage-to-laserscan \
+	rosbash \
+	robot-state-publisher \
+	joint-state-publisher \
+	razor-imu-9dof \
+	ros-arduino-bridge \
+	ros-arduino-python \
+	xv-11-laser-driver \
+	ntpdate \
+	"
+
+RRECOMMENDS_${PN} = " \
+	picocom \
+	ntpdate \
+	"

@@ -8,16 +8,6 @@ PACKAGES = "${PN}"
 RDEPENDS_${PN} = "\
 	roslaunch \
 	frobo-bringup \
-	frobo-nav \
-	razor-imu-9dof \
-	ros-arduino-bridge \
-	ros-arduino-python \
-	xv-11-laser-driver \
-	robot-state-publisher \
-	joint-state-publisher \
-	rosunit \
 	rostopic \
 	rosbag \
-	rostest \
-	rosbash \
 	"
