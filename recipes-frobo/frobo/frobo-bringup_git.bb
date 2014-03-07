@@ -35,6 +35,9 @@ RDEPENDS_${PN} = " \
 	ros-arduino-bridge \
 	ros-arduino-python \
 	xv-11-laser-driver \
+	map-server \
+	move-base \
+	amcl \
 	"
 
 RRECOMMENDS_${PN} = " \
