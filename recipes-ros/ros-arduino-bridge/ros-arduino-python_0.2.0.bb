@@ -7,7 +7,7 @@ DEPENDS = "dynamic-reconfigure"
 
 require ros-arduino-bridge.inc
 
-SRC_URI += "file://0001_disable_dynamic_reconfigure.patch \
+SRC_URI += "\
 	file://frobo_arduino_params.yaml \
 	file://arduino.launch \
 	"
