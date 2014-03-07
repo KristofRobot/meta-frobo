@@ -1,0 +1,5 @@
+This directory contains various useful support files:
+
+  conf - example build configuration files
+  checkImage.sh - script to sanity check a built SD image
+  feed-server - lightweight ipk feed server
