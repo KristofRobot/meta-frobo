@@ -1,3 +1,5 @@
+Based on http://bec-systems.com/site/988/a-quick-way-to-set-up-an-openembedded-feed-server and https://github.com/cbrake/oe-build.git
+
 Install
 =======
 sudo apt-get install nodejs npm
