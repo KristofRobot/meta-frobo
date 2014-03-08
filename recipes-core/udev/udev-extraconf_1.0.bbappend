@@ -1,6 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 # Don't forget to bump PRINC if you update the extra files.
-PRINC = "1"
+PRINC = "2"
 
 SRC_URI += "\
 	file://99-frobo.rules \
