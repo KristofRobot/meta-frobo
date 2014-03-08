@@ -11,7 +11,7 @@ require frobo.inc
 do_install_append(){
         install -d ${D}/scripts
 	install -m 0755 ${S}/scripts/robotStart.sh ${D}/scripts/
-	install -m 0755 ${S}/scripts/connectArduino.sh ${D}/scripts/
+	install -m 0755 ${S}/scripts/connectArduinoMotor.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/kinectStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/mapStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/patrol.sh ${D}/scripts/
