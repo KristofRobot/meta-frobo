@@ -38,6 +38,7 @@ RDEPENDS_${PN} = " \
 	map-server \
 	move-base \
 	amcl \
+	robot-pose-ekf \
 	"
 
 RRECOMMENDS_${PN} = " \
