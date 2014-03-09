@@ -39,6 +39,7 @@ RDEPENDS_${PN} = " \
 	move-base \
 	amcl \
 	robot-pose-ekf \
+	udev-extraconf \
 	"
 
 RRECOMMENDS_${PN} = " \
