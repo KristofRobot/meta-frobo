@@ -1,5 +1,5 @@
-SRC_URI = "git://github.com/KristofRobot/ros_arduino_bridge.git;branch=enhancedPID2"
-SRCREV = "a562349319ef98fa2458bc3e4edecbf942bd76a9"
+SRC_URI = "git://github.com/KristofRobot/ros_arduino_bridge.git"
+SRCREV = "5f86067fd3f38290e5817aaa7d7349b705414d1d"
 PV = "0.2.0+git${SRCREV}"
 
 S = "${WORKDIR}/git/${ROS_BPN}"
