@@ -16,3 +16,5 @@ SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="3-1.3:1.0", SYMLINK+="ardui
 SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="3-1.1.1:1.0", SYMLINK+="lidar"
 #Port 1
 SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="3-1.1.4:1.0", SYMLINK+="arduino_imu"
+#Port 5
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="3-1.2:1.0", SYMLINK+="arduino_sonar"

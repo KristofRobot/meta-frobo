@@ -40,6 +40,7 @@ RDEPENDS_${PN} = " \
 	amcl \
 	robot-pose-ekf \
 	udev-extraconf \
+	rosserial-python \
 	"
 
 RRECOMMENDS_${PN} = " \
