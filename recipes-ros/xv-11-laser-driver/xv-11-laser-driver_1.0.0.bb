@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://package.xml;beginline=8;endline=8;md5=d566ef916e9dedc
 DEPENDS = "boost sensor-msgs roscpp"
 
 SRC_URI = "git://github.com/KristofRobot/cwru-ros-pkg.git"
-SRCREV = "28d7870a97779747a1c9c5a43eec820f9ac7b026"
+SRCREV = "5bd69d8ace74209fdecdce8d549bda69f4e13e99"
 PV = "1.0.0+git${SRCREV}"
 
 S = "${WORKDIR}/git/cwru_semi_stable/xv_11_laser_driver"
