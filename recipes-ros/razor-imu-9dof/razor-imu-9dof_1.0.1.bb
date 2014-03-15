@@ -1,12 +1,12 @@
-DESCRIPTION = "razor_imu_9dof is a package on driver for the razor board and 3D display node."
+DESCRIPTION = "A driver for the razor board and a 3D display node."
 SECTION = "devel"
 LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://package.xml;beginline=11;endline=11;md5=d566ef916e9dedc494f5f793a6690ba5"
 
 DEPENDS = "roscpp std-msgs"
 
-SRCREV = "1c2b77e8c06b5be5b4e9c08ae1858f8b72507c11"
-PV = "1.0.0+git${SRCREV}"
+SRCREV = "e4b22486b7b7230c5b469e15a1eebe8cce1630ec"
+PV = "1.0.1+git${SRCREV}"
 
 SRC_URI = "git://github.com/KristofRobot/razor_imu_9dof.git"
 
