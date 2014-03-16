@@ -7,4 +7,4 @@ DEPENDS = "roscpp rospy geometry-msgs nav-msgs move-base-msgs visualization-msgs
 
 require frobo.inc
 
-RRECOMMENDS_${PN} = "roscpp rospy geometry-msgs nav-msgs move-base-msgs visualization-msgs tf actionlib orocos-kdl dynamic-reconfigure"
+RRECOMMENDS_${PN} = "roscpp rospy geometry-msgs nav-msgs move-base-msgs visualization-msgs tf actionlib orocos-kdl dynamic-reconfigure base-local-planner clear-costmap-recovery navfn rotate-recovery"
