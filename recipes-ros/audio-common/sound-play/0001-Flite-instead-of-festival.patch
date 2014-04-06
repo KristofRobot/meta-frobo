@@ -1,0 +1,14 @@
+diff --git a/scripts/soundplay_node.py b/scripts/soundplay_node.py
+index 655c989..d6bae48 100755
+--- a/scripts/soundplay_node.py
++++ b/scripts/soundplay_node.py
+@@ -207,7 +207,8 @@ class soundplay:
+                         try:
+                             txtfile.write(data.arg)
+                             txtfile.flush()
+-                            os.system("text2wave -eval '("+voice+")' "+txtfilename+" -o "+wavfilename)
++                            #os.system("text2wave -eval '("+voice+")' "+txtfilename+" -o "+wavfilename)
++                            os.system("flite -f "+txtfilename+" -o "+wavfilename)
+                             try:
+                                 if os.stat(wavfilename).st_size == 0:
+                                     raise OSError # So we hit the same catch block
