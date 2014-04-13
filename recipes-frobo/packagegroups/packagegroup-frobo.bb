@@ -11,4 +11,5 @@ RDEPENDS_${PN} = "\
 	rostopic \
 	rosbag \
         sound-play \
+	alsa-utils \
 	"
