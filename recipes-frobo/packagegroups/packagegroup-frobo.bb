@@ -12,4 +12,5 @@ RDEPENDS_${PN} = "\
 	rosbag \
 	sound-play \
 	alsa-utils \
+	ros-pocketsphinx \
 	"
