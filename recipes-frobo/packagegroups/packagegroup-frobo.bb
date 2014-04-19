@@ -10,6 +10,6 @@ RDEPENDS_${PN} = "\
 	frobo-bringup \
 	rostopic \
 	rosbag \
-        sound-play \
+	sound-play \
 	alsa-utils \
 	"
