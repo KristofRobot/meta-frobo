@@ -13,4 +13,5 @@ RDEPENDS_${PN} = "\
 	sound-play \
 	alsa-utils \
 	ros-pocketsphinx \
+	xauth \
 	"
