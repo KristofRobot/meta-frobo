@@ -30,10 +30,10 @@ export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 
 umask 022
 
-export ROS_ROOT=/usr
+export ROS_ROOT=/opt/ros/hydro
+export PATH=$PATH:/opt/ros/hydro/bin
+export LD_LIBRARY_PATH=/opt/ros/hydro/lib
+export PYTHONPATH=/opt/ros/hydro/lib/python2.7/site-packages
 export ROS_MASTER_URI=http://localhost:11311
-export CMAKE_PREFIX_PATH=/usr
-export ROS_PACKAGE_PATH=~/ros_workspace:$ROS_PACKAGE_PATH
-export ROS_HOSTNAME=frobo.local
-export PYTHONPATH=$PYTHONPATH:/rbx1_vision:/usr/lib/python2.7/site-packages/ros_arduino_python
-touch /usr/.catkin
+export CMAKE_PREFIX_PATH=/opt/ros/hydro
+touch /opt/ros/hydro/.catkin
