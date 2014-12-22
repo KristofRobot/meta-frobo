@@ -5,7 +5,7 @@
 
 baud: 115200
 #baud: 57600
-timeout: 0.5
+timeout: 1.0
 
 rate: 50    #rate of outside ROS loop; should be at least sensorstate_rate
 sensorstate_rate: 2
