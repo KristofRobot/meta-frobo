@@ -10,8 +10,6 @@ RDEPENDS_${PN} = "\
 	frobo-bringup \
 	rostopic \
 	rosbag \
-	sound-play \
 	alsa-utils \
-	ros-pocketsphinx \
 	xauth \
 	"

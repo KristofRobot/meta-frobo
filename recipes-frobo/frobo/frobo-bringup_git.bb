@@ -27,6 +27,7 @@ RDEPENDS_${PN} = " \
 	roslaunch \
 	frobo-description \
 	frobo-nav \
+	frobo-speech \
 	freenect-launch \
 	depthimage-to-laserscan \
 	rosbash \
