@@ -34,6 +34,7 @@ RDEPENDS_${PN} = " \
 	frobo-speech \
 	frobo-vision \
 	frobo-apps \
+	frobo-follower \
 	freenect-launch \
 	depthimage-to-laserscan \
 	rosbash \
