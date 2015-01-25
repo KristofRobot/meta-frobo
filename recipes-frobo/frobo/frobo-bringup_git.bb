@@ -24,6 +24,9 @@ do_install_append(){
 	install -m 0755 ${S}/scripts/imuStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/sonarStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/ntp.sh ${D}/scripts/
+	
+	#add README
+	install -m 0644 ${S}/README.md ${D}/scripts/
 }
 
 FILES_${PN} += "/scripts/*"
