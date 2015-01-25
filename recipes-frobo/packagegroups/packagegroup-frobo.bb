@@ -12,4 +12,5 @@ RDEPENDS_${PN} = "\
 	rosbag \
 	alsa-utils \
 	xauth \
+	usbutils \
 	"
