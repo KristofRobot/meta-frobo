@@ -13,4 +13,5 @@ RDEPENDS_${PN} = "\
 	alsa-utils \
 	xauth \
 	usbutils \
+	procps \
 	"
