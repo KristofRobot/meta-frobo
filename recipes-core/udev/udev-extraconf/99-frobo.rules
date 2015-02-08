@@ -11,17 +11,18 @@
 ##############################
 
 #Port 1
-SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="3-1.1.4:1.0", SYMLINK+="arduino_imu"
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="1-1.1.4:1.0", SYMLINK+="arduino_imu"
 #Port 2
 #USB speaker - no udev rule necessary - autodetected
 #Port 3
-SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="3-1.3:1.0", SYMLINK+="arduino_motor"
+SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="1-1.3:1.0", SYMLINK+="arduino_motor"
 #Port 4
 #USB microphone - no udev rule necessary - autodetected
 #Port 5
-SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="3-1.2:1.0", SYMLINK+="lidar"
+SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="1-1.2:1.0", SYMLINK+="lidar"
 #Port 6
-#SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="3-1.1.1:1.0", SYMLINK+="arduino_sonar"
+#Not used
+#SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="1-1.1.1:1.0", SYMLINK+="arduino_sonar"
 #Wireless dongle - no udev necessary - autodetected
 #Port 7 
 #Kinect - no udev rule necessary - autodetected
