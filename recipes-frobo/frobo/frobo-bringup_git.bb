@@ -54,6 +54,9 @@ RDEPENDS_${PN} = " \
 	robot-pose-ekf \
 	udev-extraconf \
 	rosserial-python \
+	frontier-exploration \
+	hector-mapping \
+	gmapping \
 	"
 
 RRECOMMENDS_${PN} = " \
