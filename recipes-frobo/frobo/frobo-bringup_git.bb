@@ -13,6 +13,7 @@ do_install_append(){
 	install -m 0755 ${S}/scripts/robotStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/connectArduinoMotor.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/kinectStart.sh ${D}/scripts/
+	install -m 0755 ${S}/scripts/kinectStop.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/follower.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/mapStart.sh ${D}/scripts/
 	install -m 0755 ${S}/scripts/patrol.sh ${D}/scripts/
