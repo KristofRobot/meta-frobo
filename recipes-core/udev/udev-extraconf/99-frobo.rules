@@ -25,4 +25,4 @@ SUBSYSTEMS=="usb", KERNEL=="ttyACM[0-9]*", KERNELS=="1-1.2:1.0", SYMLINK+="lidar
 #SUBSYSTEMS=="usb", KERNEL=="ttyUSB[0-9]*", KERNELS=="1-1.1.1:1.0", SYMLINK+="arduino_sonar"
 #Wireless dongle - no udev necessary - autodetected
 #Port 7 
-#Kinect - no udev rule necessary - autodetected
+#Kinect - no udev rule necessary - autodetected - 1-1.1.2
