@@ -30,12 +30,12 @@ export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 
 umask 022
 
-export ROS_ROOT=/opt/ros/hydro
-export PATH=$PATH:/opt/ros/hydro/bin
-export LD_LIBRARY_PATH=/opt/ros/hydro/lib
-export PYTHONPATH=/opt/ros/hydro/lib/python2.7/site-packages
+export ROS_ROOT=/opt/ros/indigo
+export PATH=$PATH:/opt/ros/indigo/bin
+export LD_LIBRARY_PATH=/opt/ros/indigo/lib
+export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
 export ROS_MASTER_URI=http://localhost:11311
+export CMAKE_PREFIX_PATH=/opt/ros/indigo
+touch /opt/ros/indigo/.catkin
 export ROS_HOSTNAME=frobo.local
 export ROS_LOG_DIR=/dev/shm/rosLogs
-export CMAKE_PREFIX_PATH=/opt/ros/hydro
-touch /opt/ros/hydro/.catkin
