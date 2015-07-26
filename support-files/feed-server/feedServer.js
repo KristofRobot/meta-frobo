@@ -10,5 +10,5 @@ var app = express()
 app.use('/', serveStatic(__dirname + '/../build/tmp-glibc/deploy/ipk/'))
 app.use('/', serveIndex(__dirname +'/../build/tmp-glibc/deploy/ipk/'))
 
-console.log("feed server started on port 4000")
+console.log("Feed server started on port 4000")
 app.listen(4000)
