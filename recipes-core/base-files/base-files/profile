@@ -30,6 +30,7 @@ export PATH PS1 OPIEDIR QPEDIR QTDIR EDITOR TERM
 
 umask 022
 
+export ROS_DISTRO=indigo
 export ROS_ROOT=/opt/ros/indigo
 export PATH=$PATH:/opt/ros/indigo/bin
 export LD_LIBRARY_PATH=/opt/ros/indigo/lib
