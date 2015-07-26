@@ -40,3 +40,4 @@ export CMAKE_PREFIX_PATH=/opt/ros/indigo
 touch /opt/ros/indigo/.catkin
 export ROS_HOSTNAME=frobo.local
 export ROS_LOG_DIR=/dev/shm/rosLogs
+export ROS_PACKAGE_PATH=/opt/ros/indigo/share
