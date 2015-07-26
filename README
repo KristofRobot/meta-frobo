@@ -3,16 +3,31 @@ frobo layer.
 
 Please see the corresponding sections below for details.
 
-Build
-=====
+##Build
+
 To build an image that can be directly used on frobo:
+
+###Prepare WiFi
+
+  cd meta-frobo/recipes-connectivity/wpa-supplicant/wpa-supplicant
+  cp wpa_supplicant.conf-sane.template wpa_supplicant.conf-sane
+  [edit wpa_supplicant.conf-sane with your WiFi AP info]
+
+###Build
 
   bitbake core-image-frobo
   sudo dd if=core-image-frobo of=/dev/mmcblk0 bs=4096
   using gparted, resize base partition to max size
+  
+###Connect via WiFi
 
-Dependencies
-============
+  ssh root@frobo.local
+  
+###Debug via serial
+
+  gtkterm -p [serial port] -s 115200
+
+##Dependencies
 
 This layer depends on:
 
@@ -34,8 +49,7 @@ This layer depends on:
   URI: git://github.com/linux-sunxi/meta-sunxi
   branch: master
 
-Patches
-=======
+##Patches
 
 Please submit any patches against the frobo layer to the
 the maintainer:
