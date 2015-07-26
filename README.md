@@ -40,7 +40,7 @@ To build a cubieboard2 image that can be directly used on frobo:
   ln -s ~/OE/bitbake ~/OE/openembedded-core/bitbake
   source openembedded-core/oe-init-build-env
 ```
-* Add the required dependencies by modifying ./conf/bblayers.conf (adjust /home/me/devel as necessary):
+* Add the required dependencies by modifying ``./conf/bblayers.conf`` (adjust /home/me/devel as necessary):
 ```
   BBLAYERS ?= " \
     /home/me/OE/openembedded-core/meta \
@@ -52,14 +52,14 @@ To build a cubieboard2 image that can be directly used on frobo:
     /home/me/OE/meta-sunxi \
     /home/me/OE/meta-frobo \
 ```
-* Set build configuration in ./conf/local.conf:
+* Set build configuration in ``./conf/local.conf``:
 ```
   MACHINE ??= "cubieboard2
   DL_DIR ?= "${TOPDIR}/downloads"
   #Use frobo distro
   DISTRO ?= "frobo"
   
-  #optimize space usage during build
+  #Optimize space usage during build
   INHERIT += "rm_work"
   RM_WORK_EXCLUDE += ""
   
@@ -69,7 +69,7 @@ To build a cubieboard2 image that can be directly used on frobo:
   #Enable PR service
   PRSERV_HOST = "localhost:0"
   
-  #to allow pcl to build on a machine with little memory
+  #To allow pcl to build on a machine with little memory
   BB_NUMBER_THREADS ?= "1"
   PARALLEL_MAKE ?= "-j 1"
 ```
@@ -79,8 +79,14 @@ To build a cubieboard2 image that can be directly used on frobo:
   cp wpa_supplicant.conf-sane.template wpa_supplicant.conf-sane
   [edit wpa_supplicant.conf-sane with your WiFi AP info]
 ```
+* Update ``meta-frobo/conf/distro/frobo.conf`` to set your feed-server, e.g.: 
+```
+  DISTRO_FEED_URI = "http://robo.local:4000"
+```
 * Build Image
 ```
+  cd ~/OE
+  source openembedded-core/oe-init-build-env
   bitbake core-image-frobo
 ```
 * Write image to SD (replace /dev/sdb as required)
@@ -96,6 +102,37 @@ To build a cubieboard2 image that can be directly used on frobo:
 * Debug via serial
 ```
   gtkterm -p [serial port] -s 115200
+```
+
+## FEED-SERVER
+
+To update packages on the system after building the image, run the feed-server:
+
+On your build machine:
+* Prepare and start feed-server
+```
+  sudo apt-get install nodejs npm
+  npm install express serve-index serve-static
+  cp -r meta-frobo/support-files/feed-server OE
+  cd OE/feed-server
+  ./startFeedServer.sh
+```
+
+* Build package
+```
+  bitbake [package]
+  bitbake package-index
+```
+
+On frobo:
+```
+  opkg update
+  opkg install [package]
+```
+or
+```
+  opkg update
+  opkg upgrade
 ```
 
 ## PATCHES
