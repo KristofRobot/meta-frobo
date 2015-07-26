@@ -1,33 +1,32 @@
-This README file contains information on the contents of the
-frobo layer.
+This is a layer to build frobo, a differential drive ROS-based robot, in an OpenEmbedded Linux system.
 
 Please see the corresponding sections below for details.
 
-##Build
+## BUILD
 
 To build an image that can be directly used on frobo:
 
-###Prepare WiFi
+Prepare WiFi
 
   cd meta-frobo/recipes-connectivity/wpa-supplicant/wpa-supplicant
   cp wpa_supplicant.conf-sane.template wpa_supplicant.conf-sane
   [edit wpa_supplicant.conf-sane with your WiFi AP info]
 
-###Build
+Build Image
 
   bitbake core-image-frobo
   sudo dd if=core-image-frobo of=/dev/mmcblk0 bs=4096
   using gparted, resize base partition to max size
   
-###Connect via WiFi
+Connect via WiFi
 
   ssh root@frobo.local
   
-###Debug via serial
+Debug via serial
 
   gtkterm -p [serial port] -s 115200
 
-##Dependencies
+## DEPENDENCIES
 
 This layer depends on:
 
@@ -42,14 +41,13 @@ This layer depends on:
   layers: meta-oe meta-networking
   branch: master
 
-
   URI: git://github.com/bmwcarit/meta-ros
   branch: master
 
   URI: git://github.com/linux-sunxi/meta-sunxi
   branch: master
 
-##Patches
+## PATCHES
 
 Please submit any patches against the frobo layer to the
 the maintainer:
