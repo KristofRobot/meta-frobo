@@ -4,13 +4,13 @@
 auto lo
 iface lo inet loopback
 
-# Wireless interfaces
+# Wireless interface
 auto wlan0
 iface wlan0 inet dhcp
 	wpa-conf /etc/wpa_supplicant.conf
 
-# Wired or wireless interfaces
-#auto eth0
+# Wired interface
+auto eth0
 #iface eth0 inet dhcp
 iface eth0 inet static
 address 192.168.1.1
