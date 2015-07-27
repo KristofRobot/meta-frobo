@@ -14,4 +14,5 @@ RDEPENDS_${PN} = "\
 	xauth \
 	usbutils \
 	procps \
+	coreutils \
 	"
