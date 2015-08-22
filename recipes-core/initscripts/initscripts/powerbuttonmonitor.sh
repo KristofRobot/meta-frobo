@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #block until button is pressed
 dd if=/dev/input/event0 count=1 > /dev/null 2>&1
 
